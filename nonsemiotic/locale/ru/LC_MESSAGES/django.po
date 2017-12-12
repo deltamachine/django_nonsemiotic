@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-12 19:32+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+#: nonsemiotic/templates/admin/nonsemiotic/change_list.html:31
+msgid "Home"
+msgstr ""
+
+#: nonsemiotic/templates/admin/nonsemiotic/change_list.html:49
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: nonsemiotic/templates/admin/nonsemiotic/change_list.html:58
+msgid "Please correct the error below."
+msgstr ""
+
+#: nonsemiotic/templates/admin/nonsemiotic/change_list.html:58
+msgid "Please correct the errors below."
+msgstr ""
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:89
+#: nonsemiotic/templates/nonsemiotic/about_project.html:141
+#: nonsemiotic/templates/nonsemiotic/main.html:89
+#: nonsemiotic/templates/nonsemiotic/main.html:141
+#: nonsemiotic/templates/nonsemiotic/publications.html:93
+#: nonsemiotic/templates/nonsemiotic/publications.html:145
+#: nonsemiotic/templates/nonsemiotic/results.html:89
+#: nonsemiotic/templates/nonsemiotic/results.html:141
+#: nonsemiotic/templates/nonsemiotic/search.html:110
+#: nonsemiotic/templates/nonsemiotic/search.html:162
+msgid "Lexical Typology of non-semiotic Gestures and Postures"
+msgstr "Лексическая типология несемиотических жестов"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:107
+#: nonsemiotic/templates/nonsemiotic/main.html:107
+#: nonsemiotic/templates/nonsemiotic/publications.html:111
+#: nonsemiotic/templates/nonsemiotic/results.html:107
+#: nonsemiotic/templates/nonsemiotic/search.html:128
+msgid "Main"
+msgstr "Главная"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:108
+#: nonsemiotic/templates/nonsemiotic/about_project.html:156
+#: nonsemiotic/templates/nonsemiotic/main.html:108
+#: nonsemiotic/templates/nonsemiotic/main.html:156
+#: nonsemiotic/templates/nonsemiotic/publications.html:112
+#: nonsemiotic/templates/nonsemiotic/results.html:108
+#: nonsemiotic/templates/nonsemiotic/search.html:129
+msgid "About"
+msgstr "О проекте"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:109
+#: nonsemiotic/templates/nonsemiotic/main.html:109
+#: nonsemiotic/templates/nonsemiotic/publications.html:113
+#: nonsemiotic/templates/nonsemiotic/publications.html:159
+#: nonsemiotic/templates/nonsemiotic/results.html:109
+#: nonsemiotic/templates/nonsemiotic/search.html:130
+#: nonsemiotic/templates/nonsemiotic/publications.html:167
+msgid "Publications"
+msgstr "Публикации"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:110
+#: nonsemiotic/templates/nonsemiotic/main.html:110
+#: nonsemiotic/templates/nonsemiotic/publications.html:114
+#: nonsemiotic/templates/nonsemiotic/results.html:110
+#: nonsemiotic/templates/nonsemiotic/search.html:131
+#: nonsemiotic/templates/nonsemiotic/search.html:376
+msgid "Search"
+msgstr "Поиск"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:157
+#: nonsemiotic/templates/nonsemiotic/about_project.html:185
+msgid "References"
+msgstr "Список литературы"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:158
+#: nonsemiotic/templates/nonsemiotic/main.html:160
+msgid "Up"
+msgstr "Наверх"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:166
+#: nonsemiotic/templates/nonsemiotic/main.html:168
+msgid "About our project"
+msgstr "Коротко о проекте"
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:168
+#: nonsemiotic/templates/nonsemiotic/main.html:170
+msgid ""
+"The project is dedicated to the typology of constructions that describe "
+"spontaneous movements of parts of the body (compare \"raise your head\", "
+"\"stand on one’s feet\" or \"wag the tail\")."
+msgstr "Проект посвящен типологии конструкций, которые описывают спонтанные движения частей тела (ср. 'поднять голову', 'встать на ноги' или 'вилять хвостом')."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:170
+#: nonsemiotic/templates/nonsemiotic/main.html:172
+msgid ""
+"There are numerous descriptions of semiotically loaded gestures, such as "
+"\"wringing one’s hands\", \"pouting one’s lips\", \"nodding one’s head\", "
+"etc. (cf. Kreidlin 2002, 2013, Kreidlin, Letuchy 2006). However, semiotics "
+"is culture specific, which makes it difficult to build a typology on this "
+"material: the same movement of the head can mean YES in one language (as in "
+"English), but NO in another (as in Bulgarian)."
+msgstr "В литературе по семиотике неоднократно описывались жесты, которые несут ясную знаковую нагрузку, ср. ‘заламывать руки’, ‘надуть губы’, ‘кивнуть головой’ и проч. (ср. Крейдлин 2002, 2013, Крейдлин, Летучий 2006). Семиотика культурно специфична, и на этом материале трудно строить типологию: один и тот же наклон головы в одном языке может, как известно, значить ДА, а в другом – НЕТ."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:172
+#: nonsemiotic/templates/nonsemiotic/main.html:174
+msgid ""
+"Unlike semiotic gestures, non-semiotic ones present an attractive task for "
+"linguistic typology. The subject is also appealing because it touches upon "
+"several well-studied areas, such as the typology of verbs of motion (cf. "
+"Talmy 1985, 2000, Slobin 2004), the typology of body parts (cf. Andersen "
+"1978, Koch 2008, Majid 2010), and the typology of causative constructions "
+"(Comrie, Polinsky 1993, Song 2001). At the same time, for each of these "
+"areas our constructions are peripheral and thus are rarely in the focus of "
+"attention of researchers."
+msgstr "Напротив, способ выражения несемиотических, спонтанных жестов привлекателен как типологическая задача. Этот сюжет интересен еще и тем, что он затрагивает сразу несколько хорошо изученных областей, таких как типология глаголов движения (ср. Talmy 1985, 2000, Slobin 2004…), типология частей тела (Andersen 1978, Koch 2008, Majid 210) и типология каузативных конструкций (Comrie, Polinsky 1993, Song 2001). Вместе с тем, для каждой из этих областей наши конструкции находятся на периферии и редко оказываются в центре внимания исследователей."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:174
+msgid ""
+"The movement of parts of the body does not seem to be a prototypical "
+"movement of the object from the original point A to the final point B and "
+"does not share many of the properties that are mandatory for them."
+msgstr "Движение частей тела не похоже на прототипическое перемещение объекта из исходного пункта А в конечный пункт Б и не разделяет многих обязательных для них свойств."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:176
+msgid ""
+"Let’s first compare the \"classical\" type of movement such as moving things "
+"up from the first floor to the second with raising one’s hand: the latter "
+"has neither an the initial point of movement (from where do you raise your "
+"hand?) nor the final point (where do you raise your hand?)."
+msgstr "Сравним для начала «классическое» перемещение типа поднять вещи с первого на второй этаж и сочетания типа поднять руку: при них нельзя выразить ни начальный пункт перемещения (??откуда поднял руку), ни конечный (??куда поднял)."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:178
+msgid ""
+"Secondly, in order to raise, let’s say, a stone, we take it with our hand as "
+"an instrument. This is natural: since the movement of a stone is a causative "
+"situation, it often needs an external tool. However, we normally raise our "
+"own hands, legs, or head without the help of hands, merely by means of "
+"internal muscular contrations."
+msgstr "Во-вторых, чтобы поднять, например, камень, мы берем его рукой – как инструментом. Это естественно, так как перемещение камня – каузативная ситуация, ей часто свойствен внешний инструмент. Однако собственные руки, ноги или голову мы поднимаем, как правило, без помощи рук -- одним только внутренним мышечным напряжением самих частей тела."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:180
+msgid ""
+"Finally, when lifting a stone, we forcefully detach it from the original "
+"surface (to then move it upwards. This does not happen with hands and feet: "
+"they still remain the inalianable parts of our body after moving."
+msgstr "Наконец, третье: поднимая камень, мы с силой отрываем его от поверхности, на которой он находился (чтобы затем и переместить его вверх) – тогда как с руками и ногами этого не происходит: в результате перемещения они все равно остаются неотторжимыми частями нашего тела."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:182
+msgid ""
+"It is easy to see that the displacement situations of interest to us are "
+"substancially non-standard. This means that ordinary verbs of motion in "
+"their usual sense do not apply to them. If they are applied, they will "
+"necessarily undergo a semantic shift. Languages can choose different "
+"metaphors to denote this movement and even choose predicates (constructions, "
+"phrases) with a special, narrow meaning that reflects exactly this movement "
+"of exactly that part of the body in precisely these conditions. Consider "
+"squat, purse one’s mouth, hold one’s hands behind one’s back and so on. We "
+"will be interested in the similarities and the dissimilarities of the "
+"semantic strategies chosen by different languages."
+msgstr "Легко видеть, что интересующие нас ситуации перемещения в принципе нестандратны. Это значит, что к ним не применимы обычные глаголы перемещения в обычном значении. Если же они применяются, то требуют переосмысления, семантического сдвига. Языки могут выбирать разные метафоры для обозначения данного движения и даже выбирать предикаты (конструкции, фраземы) со специальным, узким значением, отражающим именно это движение именно такой части тела именно в данных условиях, ср. сесть на корточки, поджать губы, заложить руки за спину и проч. Нас будут интересовать сходства и различия выбранных языками семантических стратегий."
+
+#: nonsemiotic/templates/nonsemiotic/about_project.html:225
+#: nonsemiotic/templates/nonsemiotic/main.html:225
+#: nonsemiotic/templates/nonsemiotic/publications.html:187
+#: nonsemiotic/templates/nonsemiotic/results.html:184
+#: nonsemiotic/templates/nonsemiotic/search.html:383
+msgid "School of Linguistics NRU HSE"
+msgstr "Школа Лингвистики НИУ ВШЭ"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:157
+#: nonsemiotic/templates/nonsemiotic/main.html:179
+msgid "Questionnaire"
+msgstr "Анкета"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:158
+#: nonsemiotic/templates/nonsemiotic/main.html:188
+msgid "Project participants"
+msgstr "Участники проекта"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:159
+#: nonsemiotic/templates/nonsemiotic/main.html:201
+msgid "Contacts"
+msgstr "Контакты"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:176
+msgid ""
+"The movement of parts of the body does not seem to be a prototypical "
+"movement of the object from the original point A to the final point B and "
+"does not share many of the properties that are mandatory for them: "
+msgstr "Движение частей тела не похоже на прототипическое перемещение объекта из исходного пункта А в конечный пункт Б и не разделяет многих обязательных для них свойств:"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:176
+msgid "more"
+msgstr "подробнее"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:181
+msgid ""
+"To analyze this peculiar semantic zone, we developed a detailed "
+"questionnaire containing a set of video clips and parallel linguistic "
+"contexts and filled it with data from more than 30 languages."
+msgstr "Для анализа этой необычной семантической зоны мы разработали подробную анкету, состоящую из набора видеоклипов и параллельных им языковых контекстов, и заполнили её данными более 20 языков."
+
+#: nonsemiotic/templates/nonsemiotic/main.html:183
+msgid "Click the link to see the questionnaire on the"
+msgstr "Вы можете посмотреть анкету на"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:183
+msgid "search page"
+msgstr "странице поиска"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:183
+msgid "or download the archive of the video clips and the table"
+msgstr "либо скачать архив с видеоклипами и таблицей по"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:183
+msgid "here"
+msgstr "ссылке"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:185
+msgid ""
+"All materials are collected in a single database presented on this site."
+msgstr "Все материалы собраны в единую базу данных, которая и представлена на этом сайте."
+
+#: nonsemiotic/templates/nonsemiotic/main.html:190
+msgid "Project leaders:"
+msgstr "Руководители проекта:"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:190
+msgid "Ekaterina Rakhilina"
+msgstr "Екатерина Рахилина"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:190
+#: nonsemiotic/templates/nonsemiotic/main.html:205
+msgid "Daria Ryzhova"
+msgstr "Дарья Рыжова"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:192
+msgid "Website developer and database: Anna Kondratjeva."
+msgstr "Разработчик сайта и базы данных: Анна Кондратьева"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:194
+msgid "Students and faculty of the"
+msgstr "Студенты и преподаватели"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:194
+msgid ""
+"School of Linguistics of the National Research University, Higher School of "
+"Economics"
+msgstr "Школы Лингвистики НИУ ВШЭ"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:196
+msgid "Moscow lexico-typological group MLexT"
+msgstr "Участники Московской лексико-типологической группы MLexT"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:198
+msgid ""
+"The creators of the video card: Alexandra Matveeva, Matvey Sokolovsky, Anna "
+"Kondratjeva."
+msgstr "Создатели видеоанкеты: Александра Матвеева, Матвей Соколовский, Анна Кондратьева"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:202
+msgid ""
+"Comments are welcome. Please direct your questions and considerations "
+"regarding our project or this site to the managers and developers of the "
+"database:"
+msgstr "Если у вас возник какой-либо вопрос, связанный с нашим проектом, а также если вы заметили ошибку или у вас возникли проблемы с работой сайта, вы можете связаться с руководителями и разработчиками базы:"
+
+#: nonsemiotic/templates/nonsemiotic/main.html:206
+msgid "Anna Kondratjeva"
+msgstr "Анна Кондратьева"
+
+#: nonsemiotic/templates/nonsemiotic/publications.html:169
+msgid "On this page will be a list of publications, dedicated to this project."
+msgstr "В этом разделе будут выкладываться все публикации, связанные с данным проектом."
+
+#: nonsemiotic/templates/nonsemiotic/results.html:151
+msgid "Search results"
+msgstr "Результаты поиска"
+
+#: nonsemiotic/templates/nonsemiotic/results.html:158
+msgid "Language"
+msgstr "Язык"
+
+#: nonsemiotic/templates/nonsemiotic/results.html:159
+msgid "Questionnaire item"
+msgstr "Пункт анкеты"
+
+#: nonsemiotic/templates/nonsemiotic/results.html:160
+msgid "Lexical item"
+msgstr "Лексическое средство"
+
+#: nonsemiotic/templates/nonsemiotic/results.html:161
+msgid "Construction"
+msgstr "Конструкция"
+
+#: nonsemiotic/templates/nonsemiotic/results.html:162
+msgid "Literal translation"
+msgstr "Буквальный перевод"
+
+#: nonsemiotic/templates/nonsemiotic/results.html:163
+msgid "Comments"
+msgstr "Комментарии"
+
+#: nonsemiotic/templates/nonsemiotic/search.html:36
+msgid ""
+"It seems that you forgot to choose language or gesture. Please try again."
+msgstr "Кажется, вы забыли выбрать язык или жест. Попробуйте еще раз."
+
+#: nonsemiotic/templates/nonsemiotic/search.html:173
+msgid "Choose language"
+msgstr "Выберите язык"
+
+#: nonsemiotic/templates/nonsemiotic/search.html:189
+msgid "Choose gestures/postures"
+msgstr "Выберите жест"
+
+#: nonsemiotic/templates/nonsemiotic/search.html:190
+msgid "To view a GIF image, click on it. To stop playback, click on it again."
+msgstr "Для просмотра GIF-изображения кликните на него. Чтобы остановить воспроизведение, кликните на него еще раз."
+
+#: nonsemiotic/templates/nonsemiotic/search.html:200
+msgid "Feet"
+msgstr "Ноги"
+
+#: nonsemiotic/templates/nonsemiotic/search.html:236
+msgid "Hands and fingers"
+msgstr "Руки и пальцы"
+
+#: nonsemiotic/templates/nonsemiotic/search.html:271
+msgid "Back"
+msgstr "Спина"
+
+#: nonsemiotic/templates/nonsemiotic/search.html:306
+msgid "Neck and head"
+msgstr "Шея и голова"
+
+#: nonsemiotic/templates/nonsemiotic/search.html:341
+msgid "Miscellaneous"
+msgstr "Разное"
