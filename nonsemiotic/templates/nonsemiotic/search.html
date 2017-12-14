@@ -134,7 +134,7 @@ body {
     </div>
 
     <div class="col-sm-2" style="padding-left: 80px;">
-    <form class="form-inline" action="/nonsemiotic/i18n/setlang/" method="post">
+    <form class="form-inline" action="{% url 'set_language' %}" method="post">
     {% csrf_token %}
       <div class="input-group" style="padding-top: 10px;">
         <input name="next" type="hidden" value="{{ redirect_to }}" />
