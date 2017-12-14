@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.contrib import admin
 from django.forms import TextInput, Textarea, modelformset_factory
 from django.db import models
