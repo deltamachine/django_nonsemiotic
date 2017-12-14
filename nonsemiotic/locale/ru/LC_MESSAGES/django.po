@@ -305,7 +305,7 @@ msgid "Questionnaire item"
 msgstr "Пункт анкеты"
 
 #: nonsemiotic/templates/nonsemiotic/results.html:160
-msgid "Lexical item"
+msgid "Lexical device(s)"
 msgstr "Лексическое средство"
 
 #: nonsemiotic/templates/nonsemiotic/results.html:161
