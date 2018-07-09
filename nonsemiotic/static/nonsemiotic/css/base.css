@@ -1,0 +1,73 @@
+/* цвет фона и рамки навигационного меню */
+.navbar-inverse {
+  background-color: #009a63 !important;
+  border-color: #009a63;
+}
+
+/* цвет текста, содержащий название сайта или бренда */
+.navbar-inverse .navbar-brand {
+  color: #e5f4ef;
+}
+
+/* Цвет пунктов навигационного меню */
+.navbar-inverse .navbar-nav > li > a {
+  color: #e5f4ef;
+}
+
+/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #005c3b;
+}
+
+h1 {
+  font-size:370%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
+
+#sidebar {
+  position: fixed;
+}
+
+#sec1 {
+  margin-top: 0px;
+}
+
+.media-object {
+  width: 180px;
+}
+
+
+.text-center p {
+    margin: 10px 0;
+}
+
+#languages {
+    padding-right: 40px; 
+    padding-left: 40px;
+}
+
+#gestures {
+    padding-right: 20px; 
+    padding-left: 20px
+}
+
+#accordion {
+    padding-right: 0px; 
+    padding-left: 0px
+}
+
+.text-center {
+  position: absolute;
+  background-color: #cceadf;
+  border-color: #cceadf;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  bottom: 0;
+  width: 100%;
+} 

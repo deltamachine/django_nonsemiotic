@@ -14,7 +14,6 @@ from operator import __or__ as OR
 class MainView(TemplateView):
     template_name = 'nonsemiotic/main.html'
 
-
 class AboutProjectView(TemplateView):
     template_name = 'nonsemiotic/about_project.html'
 

@@ -1,151 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'nonsemiotic/base.html'%}
 {% load static %}
 {% load i18n %}
-<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
 
-
-<script type="text/javascript">
-  $(document).scroll(function() {
-    if ($(window).scrollTop() >= 170) {
-      $("#sidebar").css("top", "15px");
-
-    } else if ($(window).scrollTop() < 170) {
-      var count = $(window).scrollTop();
-      $("#sidebar").css("top", 205 - count);
-    }   
-  });
-</script>
-
-
-<style>       
-/* цвет фона и рамки навигационного меню */
-.navbar-inverse {
-  background-color: #009a63;
-  border-color: #009a63;
-}
-
-/* цвет текста, содержащий название сайта или бренда */
-.navbar-inverse .navbar-brand {
-  color: #e5f4ef;
-}
-
-/* Цвет пунктов навигационного меню */
-.navbar-inverse .navbar-nav > li > a {
-  color: #e5f4ef;
-}
-
-/* Цвет и фон активного пункта меню, а также поднесении к нему курсора мышки или при его нахождении в фокусе */
-.navbar-inverse .navbar-nav > .active > a, 
-.navbar-inverse .navbar-nav > .active > a:hover, 
-.navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: #005c3b;
-}
-
-h1 {
-  font-size:370%;
-}
-
-body {
-  position: relative;
-  margin: 0;
-}
-
-#sidebar {
-  position: fixed;
-}
-
-#sec1 {
-  margin-top: 0px;
-}
-
-.media-object {
-  width: 180px;
-}
-
-/* Футер */
-.text-center {
-  background-color: #cceadf;
-  border-color: #cceadf;
-  margin-top: 20px;
-  margin-bottom: 0px;
-} 
-
-.text-center p {
-    margin: 10px 0;
-}
-
-</style>
-
-
-<head>
-
-<title>{% trans 'Lexical Typology of non-semiotic Gestures and Postures' %}</title>   
-	
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    
-    <div class="row">
-    <div class="col-sm-10">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="//linghub.ru/nonsemiotic/"><b>{% trans 'Main' %}</b><span class="sr-only">(current)</span></a></li>
-        <li><a href="//linghub.ru/nonsemiotic/about_project"><b>{% trans 'About' %}</b></a></li>
-        <li><a href="//linghub.ru/nonsemiotic/publications"><b>{% trans 'Publications' %}</b></a></li>
-		    <li><a href="//linghub.ru/nonsemiotic/search"><b>{% trans 'Search' %}</b></a></li>
-      </ul>
-    </div>
-    </div>
-
-    <div class="col-sm-2" style="padding-left: 80px;">
-    <form class="form-inline" action="{% url 'set_language' %}" method="post">
-    {% csrf_token %}
-      <div class="input-group" style="padding-top: 10px;">
-        <input name="next" type="hidden" value="{{ redirect_to }}" />
-          <select class="form-control input-sm" name="language">
-          {% get_language_info_list for LANGUAGES as languages %}
-          {% for language in languages %}
-            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>{{ language.code }}
-            </option>
-          {% endfor %}
-          </select>
-          <span class="input-group-btn">
-             <button type="submit" class="btn btn-secondary btn-sm"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
-          </span>
-      </div>
-    </form>
-    </div>
-
-    </div>
-
-
-  </div>
-</nav>
-
+{% block content %}
 <div class="page-header">
   <center><h1 style="font-size: 36pt;">{% trans 'Lexical Typology of non-semiotic Gestures and Postures' %}</h1></center>
 </div>
-
-</head>
-
-
-<body>
-
 
 <div class="container-fluid">   
   <div class="row">
@@ -173,14 +33,14 @@ body {
 
         <p>{% trans 'Unlike semiotic gestures, non-semiotic ones present an attractive task for linguistic typology. The subject is also appealing because it touches upon several well-studied areas, such as the typology of verbs of motion (cf. Talmy 1985, 2000, Slobin 2004), the typology of body parts (cf. Andersen 1978, Koch 2008, Majid 2010), and the typology of causative constructions (Comrie, Polinsky 1993, Song 2001). At the same time, for each of these areas our constructions are peripheral and thus are rarely in the focus of attention of researchers.' %}</p>
 
-        <p>{% trans 'The movement of parts of the body does not seem to be a prototypical movement of the object from the original point A to the final point B and does not share many of the properties that are mandatory for them: ' %} <a href="//linghub.ru/nonsemiotic/about_project">{% trans 'more' %}</a>.</p>
+        <p>{% trans 'The movement of parts of the body does not seem to be a prototypical movement of the object from the original point A to the final point B and does not share many of the properties that are mandatory for them: ' %} <a href="{% url 'project' %}">{% trans 'more' %}</a>.</p>
      
       <hr id="sec2">
 			  <h2>{% trans 'Questionnaire' %}</h2>
 
 			  <p>{% trans 'To analyze this peculiar semantic zone, we developed a detailed questionnaire containing a set of video clips and parallel linguistic contexts and filled it with data from more than 30 languages.' %}</p>
 
-        <p>{% trans 'Click the link to see the questionnaire on the' %} <a href="//linghub.ru/nonsemiotic/search">{% trans 'search page' %}</a> {% trans 'or download the archive of the video clips and the table' %} <a href="//drive.google.com/file/d/0BwIdMhRFq5HoT0pwTmhLcFUxLUU/view?usp=sharing">{% trans 'here' %}.</a></p>
+        <p>{% trans 'Click the link to see the questionnaire on the' %} <a href="{% url 'search' %}">{% trans 'search page' %}</a> {% trans 'or download the archive of the video clips and the table' %} <a href="//drive.google.com/file/d/0BwIdMhRFq5HoT0pwTmhLcFUxLUU/view?usp=sharing">{% trans 'here' %}.</a></p>
 
         <p>{% trans 'All materials are collected in a single database presented on this site.' %}</p>
 
@@ -220,13 +80,4 @@ body {
   </div>
 </div>
 
-<footer class="text-center">
-  <div class="container">
-    <p class="text-muted">{% trans 'School of Linguistics NRU HSE' %} 2016 (c)</p>
-  </div>
-</footer>
-
-</body>
-
-
-</html>
+{% endblock %}
