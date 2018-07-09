@@ -25,12 +25,12 @@ PROJECT_NAME = 'nonsemiotic'
 SECRET_KEY = 'o0c*mbli$z4@7m1y)8o!x-e2tm8c-m%6nobv&&=&yd==^jd6jd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'linghub.ru']
 
 SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
 X_FRAME_OPTIONS = 'DENY'
 
 # Application definition
