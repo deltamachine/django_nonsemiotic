@@ -35,12 +35,17 @@
           {% get_available_languages as LANGUAGES %}
           {% get_language_info_list for LANGUAGES as languages %}
           {% for language in languages %}
-            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>{{ language.code }}
-            </option>
+            {% if language.code == LANGUAGE_CODE %}
+              <option value="{{ language.code }}" selected="selected"> {{ language.code }}
+              </option>
+            {% else %}
+              <option value="{{ language.code }}"> {{ language.code }}
+              </option>
+            {% endif %}
           {% endfor %}
           </select>
           <span class="input-group-btn">
-             <button type="submit" class="btn btn-secondary btn-sm" on_click="console.log("{{ LANGUAGE_CODE }}")"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+             <button type="submit" class="btn btn-secondary btn-sm" on_click=console.log("{{ LANGUAGE_CODE }}")><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
           </span>
       </div>
     </form>

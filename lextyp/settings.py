@@ -45,11 +45,12 @@ INSTALLED_APPS = [
     'nonsemiotic',
 ]
 
+
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.security.SecurityMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -114,8 +115,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = (
-    ('en', 'English'),
-    ('ru', 'Russian'),
+    ('en', _('English')),
+    ('ru', _('Russian')),
 )
 
 TIME_ZONE = 'UTC'
@@ -132,6 +133,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOCALE_PATHS = (
-   os.path.join(BASE_DIR, 'locale'),
-)
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+
+print(LOCALE_PATHS)
