@@ -46,7 +46,7 @@ class SearchView(View):
 
     def get(self, request):
         languages, feet, hands, back, head, other = self.collect_template_data()
-        print(languages)
+        #print(languages)
         
         if request.GET:
             try:

@@ -81,7 +81,7 @@ function isValid() {
           {% for elem in feet %}
             <div class="col-md-4">
               <figure class="sign">
-                <p><img src="{% static 'nonsemiotic/{{ elem.num }}.jpg' %}" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'static/nonsemiotic/{{ elem.num }}.gif' : 'static/nonsemiotic/{{ elem.num }}.jpg'"" style = "width: 300px; height: 170px" alt= "..."></p>
+                <p><img src="{% static '' %}nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? '{% static '' %}nonsemiotic/{{ elem.num }}.gif' : '{% static '' %}nonsemiotic/{{ elem.num }}.jpg'" style = "width: 300px; height: 170px" alt= "..."></p>
                 
                 <figcaption>
                   <input type="checkbox" name="part" value="{{ elem.num }}"> {{ elem.gest }} <Br>
@@ -117,7 +117,7 @@ function isValid() {
           {% for elem in hands %}
             <div class="col-md-4">
               <figure class="sign">
-                <p><img src="static/nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'static/nonsemiotic/{{ elem.num }}.gif' : 'static/nonsemiotic/{{ elem.num }}.jpg'"" style = "width: 300px; height: 170px" alt= "..."></p>
+		<p><img src="{% static '' %}nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? '{% static '' %}nonsemiotic/{{ elem.num }}.gif' : '{% static '' %}nonsemiotic/{{ elem.num }}.jpg'" style = "width: 300px; height: 170px" alt= "..."></p>
                 
                 <figcaption>
                   <input type="checkbox" name="part" value="{{ elem.num }}"> {{ elem.gest }} <Br>
@@ -152,7 +152,7 @@ function isValid() {
           {% for elem in back %}
             <div class="col-md-4">
               <figure class="sign">
-                <p><img src="static/nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'static/nonsemiotic/{{ elem.num }}.gif' : 'static/nonsemiotic/{{ elem.num }}.jpg'"" style = "width: 300px; height: 170px" alt= "..."></p>
+                <p><img src="{% static '' %}nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? '{% static '' %}nonsemiotic/{{ elem.num }}.gif' : '{% static '' %}nonsemiotic/{{ elem.num }}.jpg'" style = "width: 300px; height: 170px" alt= "..."></p>
                 
                 <figcaption>
                   <input type="checkbox" name="part" value="{{ elem.num }}"> {{ elem.gest }} <Br>
@@ -187,7 +187,7 @@ function isValid() {
           {% for elem in head %}
             <div class="col-md-4">
               <figure class="sign">
-                <p><img src="static/nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'static/nonsemiotic/{{ elem.num }}.gif' : 'static/nonsemiotic/{{ elem.num }}.jpg'"" style = "width: 300px; height: 170px" alt= "..."></p>
+                <p><img src="{% static '' %}nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? '{% static '' %}nonsemiotic/{{ elem.num }}.gif' : '{% static '' %}nonsemiotic/{{ elem.num }}.jpg'" style = "width: 300px; height: 170px" alt= "..."></p>
                 
                 <figcaption>
                   <input type="checkbox" name="part" value="{{ elem.num }}"> {{ elem.gest }} <Br>
@@ -222,7 +222,7 @@ function isValid() {
           {% for elem in other %}
             <div class="col-md-4">
               <figure class="sign">
-                <p><img src="static/nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'static/nonsemiotic/{{ elem.num }}.gif' : 'static/nonsemiotic/{{ elem.num }}.jpg'"" style = "width: 300px; height: 170px" alt= "..."></p>
+                <p><img src="{% static '' %}nonsemiotic/{{ elem.num }}.jpg" onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? '{% static '' %}nonsemiotic/{{ elem.num }}.gif' : '{% static '' %}nonsemiotic/{{ elem.num }}.jpg'" style = "width: 300px; height: 170px" alt= "..."></p>
                 
                 <figcaption>
                   <input type="checkbox" name="part" value="{{ elem.num }}"> {{ elem.gest }} <Br>
