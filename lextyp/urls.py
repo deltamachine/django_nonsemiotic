@@ -1,11 +1,11 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-from adminplus.sites import AdminSitePlus
+#from adminplus.sites import AdminSitePlus
 from nonsemiotic.views import MainView, AboutProjectView, PublicationsView, SearchView
 from django.conf.urls.i18n import i18n_patterns 
 
-admin.site = AdminSitePlus()
-admin.autodiscover()
+#admin.site = AdminSitePlus()
+#admin.autodiscover()
 
 urlpatterns = []
 
