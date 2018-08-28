@@ -25,9 +25,9 @@ PROJECT_NAME = 'nonsemiotic'
 SECRET_KEY = 'o0c*mbli$z4@7m1y)8o!x-e2tm8c-m%6nobv&&=&yd==^jd6jd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'linghub.ru']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.linghub.ru', '.linghub.ru.', 'comebackkid.pythonanywhere.com']
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = False
@@ -131,8 +131,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = os.path.join(BASE_DIR, 'static/')
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_URL = os.path.join(BASE_DIR, 'nonsemiotic/static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'nonsemiotic/static/')
 
 LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
 

@@ -46,11 +46,24 @@ function isValid() {
       <h3>{% trans 'Choose language' %}</h3>
         <p></p>
         <div class="row"> 
-        {% for elem in langs %}
-          <div class="col-sm-2">
-            <input type="checkbox" name="lang" value="{{ elem.lang_code }}" style="margin-right: 5px;">{{ elem.lang }}<Br>
-          </div>   
-        {% endfor %}
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
+ 
+                {% for elem in langs_en %}
+                  <div class="col-sm-2">
+                    <input type="checkbox" name="lang" value="{{ elem.lang_code }}" style="margin-right: 5px;">{{ elem.lang_en }}<Br>
+                  </div>   
+                {% endfor %}
+
+            {% else %}
+
+                {% for elem in langs %}
+                  <div class="col-sm-2">
+                    <input type="checkbox" name="lang" value="{{ elem.lang_code }}" style="margin-right: 5px;">{{ elem.lang }}<Br>
+                  </div>   
+                {% endfor %}
+
+            {% endif %}
         </div>
 
     </div>

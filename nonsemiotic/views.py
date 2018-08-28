@@ -25,6 +25,7 @@ class PublicationsView(TemplateView):
 class SearchView(View):
     def collect_template_data(self):
         languages = LanguagesData.objects.values('lang', 'lang_code').distinct().order_by('lang')
+        languages_en = LanguagesData.objects.values('lang_en', 'lang_code').distinct().order_by('lang_en')
         gestures = LanguagesData.objects.filter(lang_code='est').values('gest', 'num').order_by('num')
 
         feet = gestures[:25]
@@ -33,24 +34,25 @@ class SearchView(View):
         head = gestures[76:84]
         other = gestures[84:]
 
-        return languages, feet, hands, back, head, other
+        return languages, languages_en, feet, hands, back, head, other
 
     def get_data_from_db(self, parameters):
         search_for_lang = [Q(lang_code=lang) for lang in parameters.getlist('lang')]
         search_for_gest = [Q(num=gest) for gest in parameters.getlist('part')]
 
         result = LanguagesData.objects.filter(reduce(OR, search_for_lang), 
-          reduce(OR, search_for_gest)).values('lang', 'gest', 'examp', 'constr', 'trans', 'comm')
+          reduce(OR, search_for_gest)).values('lang', 'lang_en', 'gest', 'examp', 'constr', 'trans', 'comm')
 
         return result
 
     def get(self, request):
-        languages, feet, hands, back, head, other = self.collect_template_data()
+        languages, languages_en, feet, hands, back, head, other = self.collect_template_data()
         #print(languages)
         
         if request.GET:
             try:
                 result = self.get_data_from_db(request.GET)
+                print(result)
                 return render(request, 'nonsemiotic/results.html', {'result': result})
             except:
                 pass
@@ -58,6 +60,7 @@ class SearchView(View):
         return render(request,
                       'nonsemiotic/search.html',
                       {'langs': languages,
+                       'langs_en': languages_en,
                        'feet': feet,
                        'hands': hands,
                        'back': back,

@@ -27,16 +27,33 @@
         </tr>
       </thead>
       <tbody>
-        {% for elem in result %}
-          <tr>
-            <td><p>{{ elem.lang }}</p></td>
-            <td><p>{{ elem.gest }}</p></td>
-            <td><p>{{ elem.examp }}</p></td>
-            <td><p>{{ elem.constr }}</p></td>
-            <td><p>{{ elem.trans }}</p></td>
-            <td><p>{{ elem.comm }}</p></td>
-          </tr>
-        {% endfor %}
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'en' %}
+            {% for elem in result %}
+              <tr>
+                <td><p>{{ elem.lang_en }}</p></td>           
+                <td><p>{{ elem.gest }}</p></td>
+                <td><p>{{ elem.examp }}</p></td>
+                <td><p>{{ elem.constr }}</p></td>
+                <td><p>{{ elem.trans }}</p></td>
+                <td><p>{{ elem.comm }}</p></td>
+              </tr>
+            {% endfor %}
+
+        {% else %}
+
+            {% for elem in result %}
+              <tr>
+                <td><p>{{ elem.lang }}</p></td>           
+                <td><p>{{ elem.gest }}</p></td>
+                <td><p>{{ elem.examp }}</p></td>
+                <td><p>{{ elem.constr }}</p></td>
+                <td><p>{{ elem.trans }}</p></td>
+                <td><p>{{ elem.comm }}</p></td>
+              </tr>
+            {% endfor %}
+
+        {% endif %}
       </tbody>
     </table>
 

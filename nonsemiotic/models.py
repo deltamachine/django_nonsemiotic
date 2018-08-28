@@ -7,6 +7,7 @@ from django.db import models
 class LanguagesData(models.Model):
     num = models.IntegerField(blank=True, null=True)
     lang = models.CharField(max_length=255, blank=True, null=True)
+    lang_en = models.CharField(max_length=255, blank=True, null=True)
     lang_code = models.CharField(max_length=255, blank=True, null=True, verbose_name="Язык")
     gest = models.CharField(max_length=255, blank=True, null=True, verbose_name="Пункт анкеты")
     examp = models.CharField(max_length=255, blank=True, null=True, verbose_name="Лексическое средство")
