@@ -17,6 +17,8 @@ urlpatterns = [
     url(r'^publications$', PublicationsView.as_view(), name='publications'),
     url(r'^search$', SearchView.as_view(), name='search'),
     url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
+    url(r'^en/(?P<path>.*)$', include('django.conf.urls.i18n')),
+    url(r'^ru/(?P<path>.*)$', include('django.conf.urls.i18n')),
 ]
 
 urlpatterns += i18n_patterns(
@@ -25,6 +27,9 @@ urlpatterns += i18n_patterns(
     url(r'^publications$', PublicationsView.as_view(), name='publications'),
     url(r'^search$', SearchView.as_view(), name='search'),
     url(r'^i18n/', include('django.conf.urls.i18n'), name='set_language'),
+    url(r'^en/(?P<path>.*)$', include('django.conf.urls.i18n')),
+    url(r'^ru/(?P<path>.*)$', include('django.conf.urls.i18n')),
 )
 
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static('/static/', document_root=settings.STATIC_ROOT)
+urlpatterns += static('/nonsemiotic/static/', document_root=settings.STATIC_ROOT)

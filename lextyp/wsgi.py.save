@@ -12,15 +12,9 @@ import sys
 import site
 from django.core.wsgi import get_wsgi_application
 
-site.addsitedir('/home/akondratjeva/env/lib/python3.5/site-packages')
-
-sys.path.append('/home/akondratjeva/nonsemiotic')
-sys.path.append('/home/akondratjeva/nonsemiotic/lextyp')
-
+site.addsitedir('/home/akondratjevaenv/lib/python3.5/site-packages')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "lextyp.settings")
 
-activate_env=os.path.expanduser('/home/akondratjeva/env/bin/activate_this.py')
-#execfile(activate_env, dict(__file__=activate_env))
-exec(compile(open(activate_env, "rb").read(), activate_env, 'exec'), dict(__file__=activate_env))
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 application = get_wsgi_application()
